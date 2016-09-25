@@ -1,0 +1,414 @@
+2016-09-07 14:17:01 [::1][1][pq30r0l803b6q5fsu3tp4ib422][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#3 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#7 {main}
+2016-09-07 14:17:01 [::1][1][pq30r0l803b6q5fsu3tp4ib422][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    '_csrf' => 'fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5\";}'
+    'PHPSESSID' => 'pq30r0l803b6q5fsu3tp4ib422'
+    '_identity' => 'f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/personmanage/sims/web/'
+    '__id' => 1
+    'current_key' => [
+        'k1' => 29
+        'k2' => 30
+        'k3' => ''
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\TortoiseSVN\\bin;E:\\work\\environment\\android-sdk-windows\\tools;E:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;E:\\software\\;E:\\software\\nodejs\\;C:\\Users\\locky\\AppData\\Roaming\\Composer\\vendor\\bin;E:\\software\\java\\jdk1.8.0_101\\bin;E:\\software\\java\\jdk1.8.0_101\\jre\\bin;C:\\Users\\locky\\AppData\\Roaming\\npm;E:\\software\\apache-ant-1.9.7\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1864'
+    'SCRIPT_NAME' => '/personmanage/sims/web/index.php'
+    'REQUEST_URI' => '/personmanage/sims/web/index.php?r=type%2Findex'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55499'
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/personmanage/sims/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; _csrf=fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5%22%3B%7D; PHPSESSID=pq30r0l803b6q5fsu3tp4ib422; _identity=f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/personmanage/sims/web/index.php?'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/personmanage/sims/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473257821.3699
+    'REQUEST_TIME' => 1473257821
+]
+2016-09-07 14:25:27 [::1][1][pq30r0l803b6q5fsu3tp4ib422][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: menuList in E:\phpStudy\WWW\personmanage\sims\views\type\index.php:13
+Stack trace:
+#0 E:\phpStudy\WWW\personmanage\sims\views\type\index.php(13): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\phpStudy\\WWW...', 13, Array)
+#1 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#2 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#3 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, Object(sims\controllers\TypeController))
+#4 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(sims\controllers\TypeController))
+#5 E:\phpStudy\WWW\personmanage\sims\controllers\TypeController.php(40): yii\base\Controller->render('index', Array)
+#6 [internal function]: sims\controllers\TypeController->actionIndex()
+#7 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('type/index', Array)
+#11 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\phpStudy\WWW\personmanage\sims\web\index.php(21): yii\base\Application->run()
+#13 {main}
+2016-09-07 14:25:27 [::1][1][pq30r0l803b6q5fsu3tp4ib422][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    '_csrf' => 'fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5\";}'
+    'PHPSESSID' => 'pq30r0l803b6q5fsu3tp4ib422'
+    '_identity' => 'f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/personmanage/sims/web/'
+    '__id' => 1
+    'current_key' => [
+        'k1' => 81
+        'k2' => 82
+        'k3' => ''
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\TortoiseSVN\\bin;E:\\work\\environment\\android-sdk-windows\\tools;E:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;E:\\software\\;E:\\software\\nodejs\\;C:\\Users\\locky\\AppData\\Roaming\\Composer\\vendor\\bin;E:\\software\\java\\jdk1.8.0_101\\bin;E:\\software\\java\\jdk1.8.0_101\\jre\\bin;C:\\Users\\locky\\AppData\\Roaming\\npm;E:\\software\\apache-ant-1.9.7\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1824'
+    'SCRIPT_NAME' => '/personmanage/sims/web/index.php'
+    'REQUEST_URI' => '/personmanage/sims/web/index.php?r=type%2Findex'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60204'
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/personmanage/sims/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; _csrf=fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5%22%3B%7D; PHPSESSID=pq30r0l803b6q5fsu3tp4ib422; _identity=f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/personmanage/sims/web/index.php?r=type%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/personmanage/sims/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473258327.1578
+    'REQUEST_TIME' => 1473258327
+]
+2016-09-07 14:41:10 [::1][1][pq30r0l803b6q5fsu3tp4ib422][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: pid_list in E:\phpStudy\WWW\personmanage\sims\views\type\_search.php:24
+Stack trace:
+#0 E:\phpStudy\WWW\personmanage\sims\views\type\_search.php(24): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\phpStudy\\WWW...', 24, Array)
+#1 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#2 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#3 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, NULL)
+#4 E:\phpStudy\WWW\personmanage\sims\views\type\index.php(13): yii\base\View->render('_search', Array)
+#5 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#6 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#7 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, Object(sims\controllers\TypeController))
+#8 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(sims\controllers\TypeController))
+#9 E:\phpStudy\WWW\personmanage\sims\controllers\TypeController.php(51): yii\base\Controller->render('index', Array)
+#10 [internal function]: sims\controllers\TypeController->actionIndex()
+#11 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#14 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('type/index', Array)
+#15 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\phpStudy\WWW\personmanage\sims\web\index.php(21): yii\base\Application->run()
+#17 {main}
+2016-09-07 14:41:10 [::1][1][pq30r0l803b6q5fsu3tp4ib422][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    '_csrf' => 'fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5\";}'
+    'PHPSESSID' => 'pq30r0l803b6q5fsu3tp4ib422'
+    '_identity' => 'f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/personmanage/sims/web/'
+    '__id' => 1
+    'current_key' => [
+        'k1' => 81
+        'k2' => 82
+        'k3' => ''
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\TortoiseSVN\\bin;E:\\work\\environment\\android-sdk-windows\\tools;E:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;E:\\software\\;E:\\software\\nodejs\\;C:\\Users\\locky\\AppData\\Roaming\\Composer\\vendor\\bin;E:\\software\\java\\jdk1.8.0_101\\bin;E:\\software\\java\\jdk1.8.0_101\\jre\\bin;C:\\Users\\locky\\AppData\\Roaming\\npm;E:\\software\\apache-ant-1.9.7\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1760'
+    'SCRIPT_NAME' => '/personmanage/sims/web/index.php'
+    'REQUEST_URI' => '/personmanage/sims/web/index.php?r=type%2Findex'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52283'
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/personmanage/sims/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; _csrf=fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5%22%3B%7D; PHPSESSID=pq30r0l803b6q5fsu3tp4ib422; _identity=f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/personmanage/sims/web/index.php?r=type%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/personmanage/sims/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473259270.5667
+    'REQUEST_TIME' => 1473259270
+]
+2016-09-07 14:42:03 [::1][1][pq30r0l803b6q5fsu3tp4ib422][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: pidlist in E:\phpStudy\WWW\personmanage\sims\views\type\index.php:13
+Stack trace:
+#0 E:\phpStudy\WWW\personmanage\sims\views\type\index.php(13): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\phpStudy\\WWW...', 13, Array)
+#1 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#2 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#3 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, Object(sims\controllers\TypeController))
+#4 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(sims\controllers\TypeController))
+#5 E:\phpStudy\WWW\personmanage\sims\controllers\TypeController.php(51): yii\base\Controller->render('index', Array)
+#6 [internal function]: sims\controllers\TypeController->actionIndex()
+#7 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('type/index', Array)
+#11 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\phpStudy\WWW\personmanage\sims\web\index.php(21): yii\base\Application->run()
+#13 {main}
+2016-09-07 14:42:03 [::1][1][pq30r0l803b6q5fsu3tp4ib422][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    '_csrf' => 'fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5\";}'
+    'PHPSESSID' => 'pq30r0l803b6q5fsu3tp4ib422'
+    '_identity' => 'f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/personmanage/sims/web/'
+    '__id' => 1
+    'current_key' => [
+        'k1' => 81
+        'k2' => 82
+        'k3' => ''
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\TortoiseSVN\\bin;E:\\work\\environment\\android-sdk-windows\\tools;E:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;E:\\software\\;E:\\software\\nodejs\\;C:\\Users\\locky\\AppData\\Roaming\\Composer\\vendor\\bin;E:\\software\\java\\jdk1.8.0_101\\bin;E:\\software\\java\\jdk1.8.0_101\\jre\\bin;C:\\Users\\locky\\AppData\\Roaming\\npm;E:\\software\\apache-ant-1.9.7\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1760'
+    'SCRIPT_NAME' => '/personmanage/sims/web/index.php'
+    'REQUEST_URI' => '/personmanage/sims/web/index.php?r=type%2Findex'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52773'
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/personmanage/sims/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; _csrf=fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5%22%3B%7D; PHPSESSID=pq30r0l803b6q5fsu3tp4ib422; _identity=f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/personmanage/sims/web/index.php?r=type%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/personmanage/sims/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473259323.3098
+    'REQUEST_TIME' => 1473259323
+]
+2016-09-07 14:42:21 [::1][1][pq30r0l803b6q5fsu3tp4ib422][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Unexpected yii\widgets\ActiveForm::end() call. A matching begin() is not found. in E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Widget.php:79
+Stack trace:
+#0 E:\phpStudy\WWW\personmanage\sims\views\type\_search.php(41): yii\base\Widget::end()
+#1 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#2 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#3 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, NULL)
+#4 E:\phpStudy\WWW\personmanage\sims\views\type\index.php(13): yii\base\View->render('_search', Array)
+#5 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(325): require('E:\\phpStudy\\WWW...')
+#6 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\phpStudy\\WWW...', Array)
+#7 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\phpStudy\\WWW...', Array, Object(sims\controllers\TypeController))
+#8 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(sims\controllers\TypeController))
+#9 E:\phpStudy\WWW\personmanage\sims\controllers\TypeController.php(51): yii\base\Controller->render('index', Array)
+#10 [internal function]: sims\controllers\TypeController->actionIndex()
+#11 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#14 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('type/index', Array)
+#15 E:\phpStudy\WWW\personmanage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\phpStudy\WWW\personmanage\sims\web\index.php(21): yii\base\Application->run()
+#17 {main}
+2016-09-07 14:42:21 [::1][1][pq30r0l803b6q5fsu3tp4ib422][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    '_csrf' => 'fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5\";}'
+    'PHPSESSID' => 'pq30r0l803b6q5fsu3tp4ib422'
+    '_identity' => 'f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/personmanage/sims/web/'
+    '__id' => 1
+    'current_key' => [
+        'k1' => 81
+        'k2' => 82
+        'k3' => ''
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\TortoiseSVN\\bin;E:\\work\\environment\\android-sdk-windows\\tools;E:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;E:\\software\\;E:\\software\\nodejs\\;C:\\Users\\locky\\AppData\\Roaming\\Composer\\vendor\\bin;E:\\software\\java\\jdk1.8.0_101\\bin;E:\\software\\java\\jdk1.8.0_101\\jre\\bin;C:\\Users\\locky\\AppData\\Roaming\\npm;E:\\software\\apache-ant-1.9.7\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1760'
+    'SCRIPT_NAME' => '/personmanage/sims/web/index.php'
+    'REQUEST_URI' => '/personmanage/sims/web/index.php?r=type%2Findex'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52933'
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/personmanage/sims/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; _csrf=fe01b54e0db3e90665a1e6e0d6592d228a96c5445efbb1a9c75f276ef5066518a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227J3cdPrhvy-aZ0R9yYf_WIyywULh0TL5%22%3B%7D; PHPSESSID=pq30r0l803b6q5fsu3tp4ib422; _identity=f9f042f4e2cbe2cc4ede20aec448c9ab6fc22e2d2b16cf4ba1e87b092c739347a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/personmanage/sims/web/index.php?r=type%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/personmanage/sims/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1473259341.1987
+    'REQUEST_TIME' => 1473259341
+]

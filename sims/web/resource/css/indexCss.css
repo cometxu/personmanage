@@ -1,0 +1,15 @@
+.my-login-layout{
+    background-image: url('../images/background.png');
+}
+
+.my-login-container{
+    position: absolute;
+    left: 53%;
+    top: 420px;
+}
+
+.my-center{
+    position: absolute;
+    left: 46%;
+    top: 260px;
+}
